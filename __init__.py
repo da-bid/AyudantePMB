@@ -74,7 +74,7 @@ def gSaveCSVUsersIDAction():
 
 def submenGruposAutomático():
     opciones ={
-        'msg': """El programa buscará en su carpeta un CSV llamado "Matrícula Curso escolar 202X-202Y.csv", "Matrícula Curs escolar 202X, 202Y.csv" (archivos que genera ITACA) o "NIAGRUPO.csv". Dentro buscará una columna llamada Grupo o Grups y otra llamada NIA.""",
+        'msg': """El programa buscará en su carpeta un CSV llamado "Matrícula Curso escolar 202X-202Y.csv", "Matrícula Curs escolar 202X, 202Y.csv" (archivos que genera ITACA) o "GRUPO.csv". Dentro buscará una columna llamada Grupo o Grups y otra llamada NIA.""",
         '1': ('Crear de grupos (modificará el PMB creando los grupos)', bl.gGroupCreatorFromNIA),
         '2': ('Salir', void)
     }

@@ -446,7 +446,7 @@ class blman:
         dictNia2ID=self.gGetUsersID()
         self.gSaveCSVUsersID(dictNia2ID)
         uniqueGroup=remDuplicate(arrNiaGroup,1)
-        print("¿Eliminar los grupos? (en caso contrario se reutilizan los que están) [S-1 / N-0]")
+        print("¿Eliminar los grupos existentes antes? (en caso contrario se reutilizan los que están) [S-1 / N-0]")
         ans=input()
         if ans.lower()=="s" or ans==str(1):
             self.gEliminarGrupos()
