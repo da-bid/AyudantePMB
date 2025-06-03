@@ -1,5 +1,5 @@
 ﻿# Nombre del programa: AyudantePMB API
-# Versión: 1.0
+# Versión: 1.2
 # Autor: David Palazón.
 # Repositorio: https://github.com/da-bid/AyudantePMB
 # 
@@ -443,11 +443,11 @@ class blman:
             input("Error al leer el archivo de matrícula. Pulsa INTRO para continuar.")
             return
         if arrNiaGroup==[]: return
+        print("¿Eliminar los grupos existentes antes? (en caso contrario se reutilizan los que están) [S-1 / N-0]")
+        ans=input()
         dictNia2ID=self.gGetUsersID()
         self.gSaveCSVUsersID(dictNia2ID)
         uniqueGroup=remDuplicate(arrNiaGroup,1)
-        print("¿Eliminar los grupos existentes antes? (en caso contrario se reutilizan los que están) [S-1 / N-0]")
-        ans=input()
         if ans.lower()=="s" or ans==str(1):
             self.gEliminarGrupos()
             self.gCrearGrupos(uniqueGroup)

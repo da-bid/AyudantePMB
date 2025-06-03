@@ -1,12 +1,10 @@
 ﻿# Nombre del programa: AyudantePMB
-# Versión: 1.0
+# Versión: 1.2
 # Autor: David Palazón.
 # Repositorio: https://github.com/da-bid/AyudantePMB
 # 
 # Este software se proporciona "tal cual", sin garantías de ningún tipo. Para más detalles,
 # consulta la licencia GPLv3 en https://www.gnu.org/licenses/gpl-3.0.html.
-
-
 
 from collections import defaultdict
 import configparser
@@ -231,8 +229,10 @@ if __name__ == '__main__':
     print ("""
 Bienvenido al Ayudante del Banco de Libros (ABL).
 ADVERTENCIA:
-1) Se recomienda hacer una copia de seguridad porque las acciones que aquí realices no se pueden deshacer.
-2) Revisa en el PMB las acciones efectuadas tras realizar el trabajo para comprobar que es correcto. Si se detectara algun tipo de error simplemente restaura copia de seguridad de la base de datos anterior.
+ * Si usas el PMB local se recomienda hacer una copia de seguridad porque las acciones que aquí realices no se pueden deshacer.
+
+ * Este software se proporciona "tal cual", sin garantías de ningún tipo. Para más detalles,
+ * consulta la licencia GPLv3 en https://www.gnu.org/licenses/gpl-3.0.html.
 
 Se ha iniciado sesión en:  """ + bl.dominio)
     input("Pulsa cualquier INTRO para continuar")
